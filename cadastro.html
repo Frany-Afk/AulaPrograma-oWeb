@@ -6,16 +6,34 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <h1><strong>Faza seu cadastro</strong></h1>
+    <form>
+    <h1>Faza seu cadastro</h1>
     <img src="Cachorro policia.jpg" alt="Cachorro policia esperando seu cadastro"/>
-    <label><h4>Nome completo</h4><input type="name"/></label>
-    <label><h4>e-mail</h4><input type="email" placeholder="exemplo@exemplo.com.br"/></label>
-    <label><h4>CPF</h4><input type="text" id="CPF" placeholder="000.000.000-00" maxlength="14"/></label>
-    <label><h4>telefone</h4><input type="tel" id="telefone" placeholder="(00)-999999999" maxlength="15" /></label>
-    <label><h4>Data de Nascimento</h4><input type="date"/></label>
-    <label><h4>Endereço</h4><input type="address"/></label>
-    <label><h4>CEP</h4><input type="text" placeholder="00000-00" maxlength="10"/></label>
-    <h4>Cidade e Estado</h4><select>
+    <section>
+                <fieldset>
+            <legend>Informações Pessoais</legend>
+    <label>
+        <span>Nome completo</span><input type="text" id="nome_completo" name="nome_completo"/>
+    </label>
+    <label>
+        <span>e-mail</span><input type="email" name="e-mail" placeholder="exemplo@exemplo.com.br"/>
+    </label>
+    <label>
+        <span>CPF</span><input type="text" name="CPF" placeholder="000.000.000-00" maxlength="14"/>
+    </label>
+    <label>
+        <span>telefone</span><input type="tel" name="telefone" placeholder="(00)-999999999" maxlength="15" />
+    </label>
+    <label>
+        <span>Data de Nascimento</span><input type="date" name="Data_Nascimento" />
+    </label>
+    <label>
+        <span>Endereço</span><input type="address" name="Endereço"/>
+    </label>
+    <label>
+        <span>CEP</span><input type="text" name="CEP" placeholder="00000-00" maxlength="10"/>
+    </label>
+    <span>Cidade e Estado</span><select name="estado" required>
         <option value="" disabled selected>Selecione a Cidade</option>
         <option value="Acre">Acre - AC</option>
         <option value="Alagoas">Alagoas - AL</option>
@@ -43,7 +61,10 @@
         <option value="Sergipe">Sergipe - SE</option>
         <option value="Tocantins">Tocantins - TO</option>
     </select>
+        </fieldset>
+        <button type="submit">cadastrar</button>
+</form>
+</section>
 
-    
 </body>
 </html>
