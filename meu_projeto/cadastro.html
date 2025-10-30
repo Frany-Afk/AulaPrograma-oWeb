@@ -8,13 +8,23 @@
 </head>
 <body>
 
+    <header>
+       <nav>
+        <ul>
+            <li><a href="/meu_projeto/index.html">Inicio</a></li>
+            <li><a href="/meu_projeto/projeto.html">Projeto</a></li>
+            <li><a href="/meu_projeto/cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+
   <form class="formulario-cadastro">
     <div class="cabecalho-cadastro">
       <h1 class="titulo-cadastro">Faça seu cadastro</h1>
       <figure>
         <img 
-          src="/meu_projeto/imagens/Cachorro-policia.jpg"
-          alt="Cachorro policia esperando seu cadastro"
+          src="/meu_projeto/imagens/Cachorroprofessor.jpg"
+          alt="Cachorro-profesor"
           class="imagem-cadastro"
         />
         <figcaption>Nosso parceiro fiel te espera 🐶</figcaption>
@@ -55,6 +65,9 @@
              pattern="^\d{5}-\d{3}$"
              title="formato: 00000-000" required />
 
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
       <label for="estado">Estado</label>
       <select name="estado" id="estado" class="input-cadastro" required>
         <option disabled selected>Selecione o Estado</option>
@@ -89,5 +102,6 @@
     </fieldset>
   </form>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

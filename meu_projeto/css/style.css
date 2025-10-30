@@ -9,6 +9,8 @@ box-sizing: border-box;
 body {
   background-color: #f6eee3;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-top: 80px;
 }
 
 header {
@@ -18,12 +20,14 @@ padding: 1rem 2rem;
 position: fixed;
 width: 100%;
 top: 0;
+left: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 1000;
 box-shadow: 0 2px 10px #0dcebe;
 height: 7vh;
+z-index: 1000
 }
 
 nav ul {
@@ -74,6 +78,13 @@ text-align: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.formulario label span {
+background-color: transparent;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+position: relative;
+}
+
+
 fieldset {
   border: none;
   padding: 0;
@@ -104,6 +115,7 @@ input[type="tel"] {
   outline: none;
   transition: all 0.3s ease;
   background-color: transparent;
+  
 }
 
 label span {
