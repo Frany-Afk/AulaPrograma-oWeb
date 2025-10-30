@@ -46,31 +46,35 @@
             </div>
         </section>
     </main>
-    <form class="formulario">
-         <fieldset>
-            <legend>Sem tempo para fazer o cadastro? A gente pode te contactar!</legend>
 
-<label>
-    <span>completo</span><input type="nome" name="nome" required>
-</label>
-<label>
-    <span>E-mail</span><input type="e-mail" name="e-mail" placeholder="exemplo@exemplo.com" required/>
-</label>
-<label>
-    <span>Telefone</span><input type="tel" name="Telefone" placeholder="(00)-999999999" maxlength="15" required/>
-</label>
-<label>
-<span>Tem WhatApps?</span><input type="checkbox" name="WhatApps"/>
-</label>
+   <form class="formulario">
+  <fieldset>
+    <legend>Sem tempo para fazer o cadastro? A gente pode te contactar!</legend>
 
-<div>
-<button 
-type="submit" 
-class="glow-on-hover">Contactame</button>
-</div>
+    <label>
+      <span>Nome completo</span>
+      <input type="text" name="nome" required placeholder=" " />
+    </label>
 
-         </fieldset>
-    </form>
+    <label>
+      <span>E-mail</span>
+      <input type="email" name="email" required placeholder=" " />
+    </label>
+
+    <label>
+      <span>Telefone</span>
+      <input type="tel" name="telefone" required placeholder=" " />
+    </label>
+
+    <label class="checkbox-label">
+      <input type="checkbox" name="whatsapp" />
+      <span>Tem WhatsApp?</span>
+    </label>
+
+    <button type="submit" class="glow-on-hover">Contactame</button>
+  </fieldset>
+</form>
+
 <img src="/meu_projeto/imagens/como-ajudar-ong-de-animais-petlove1.jpg" 
 alt="patinha de cachorro com uma mão de humano"
 class="foto">
