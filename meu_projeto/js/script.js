@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navLinks.forEach((link) => {
     if (link.href.includes(currentPath.split("/").pop())) {
-      link.style.color = "#02a4a2"; 
+      link.style.color = "#02a4a2";  
     }
   });
 });
