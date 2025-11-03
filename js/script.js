@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`✅ Cadastro realizado com sucesso!\nBem-vindo(a), ${nome}!`);
 
      
-      window.location.href = "/meu_projeto/index.html";
+      window.location.href = "/index.html";
     });
   }
 
